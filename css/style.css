@@ -1,0 +1,436 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+body{
+background:#E9EBEE;
+	width:50%;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+#tit{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#08589a;
+}
+.file-drop-zone .file-preview-thumbnails div img{float:left;}
+.file-drop-zone::-webkit-scrollbar{width:0px;}
+.file-drop-zone::-webkit-scrollbar-track{background-color:#666; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+.file-drop-zone::-webkit-scrollbar-thumb{background-color:#666;}
+.file-drop-zone::-webkit-scrollbar-thumb:hover{background-color:#069;}
+#display 
+{
+width:350px;
+display:none;
+overflow:hidden;
+z-index:10;
+top:38px;
+border: solid 1px #666;
+margin-left:120px;
+position:absolute;
+max-height:370px;
+overflow:auto;
+}
+.display_box /*estilos para cada caja unitaria de cada usuario que se muestra*/
+{
+	background-color:#FFF;
+padding:2px;
+padding-left:6px; 
+font-size:18px;
+height:63px;
+text-decoration:none;
+color:#3b5999; 
+}
+
+.display_box:hover /*estilos para cada caja unitaria de cada usuario que se muestra. cuando el mause se pocisiona sobre el area*/
+{
+background: #415AB5;
+color: #FFF;
+}
+
+
+.desc
+{
+color:#666;
+font-size:16;
+}
+.desc:hover
+{
+color:#FFF;
+}
+
+.menu{
+width:1368px;
+height:50px;
+position:fixed;
+border:1px solid #CCC;	
+background: #08589a;
+border-color: #08589a;
+}
+ul{list-style-type:none;}
+
+#users_online{
+	margin-top:147px;
+	position:fixed;
+	top:0;
+	right:0;
+	width:230px;
+	border-bottom-color:#fff;
+	height:482px;
+	max-height:482px;
+	overflow:auto;
+	background:#E9EBEE;
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+}
+
+#users_online4{
+	float:right;
+position:fixed;
+top:50px;
+	right:0;
+width:230px;
+	height:100px;
+	max-height:100px;
+	overflow:auto;
+background-color:#fff;
+		border-left:1px solid #ccc;
+}
+#users_online5{
+	float:right;
+position:fixed;
+top:95%;
+	right:0;
+width:230px;
+	height:5%;
+	max-height:5%;
+	overflow:auto;
+background-color:#fff;
+}
+#users_online1{
+	margin-top:399px;
+	border-radius:5px;
+	position:fixed;
+	top:0;
+	right:0;
+	left:860px;
+	border:1px solid #CCC;
+	width:265px;
+	height:39.9%;
+	max-height:100%;
+	overflow:auto;
+	background:#fff;
+}
+#users_online11{
+	margin-top:10px;
+	position:fixed;
+	border-radius:5px;
+	top:70px;
+	right:0;
+	margin-top:-15px;
+	left:860px;
+	border:1px solid #CCC;
+	width:265px;
+	height:92px;
+	max-height:92px;
+	overflow:auto;
+	background:#fff;
+}
+#users_online111{
+	border-radius:5px;
+	position:fixed;
+	top:170px;
+	right:0;
+	margin-top:-15px;
+	left:860px;
+	border:1px solid #CCC;
+	width:265px;
+	height:72px;
+	max-height:72px;
+	background:#fff;
+}
+#users_online1111{
+		border-radius:5px;
+	position:fixed;
+	top:250px;
+	right:0;
+	margin-top:-15px;
+	left:860px;
+	border:1px solid #CCC;
+	width:265px;
+	height:157px;
+	max-height:157px;
+	overflow:auto;
+	background:#fff;
+}
+#users_online3{
+	border-radius: 0px;
+    margin-top: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    float: left;
+    border-right: 1px solid #ccc;
+    width: 240px;
+    height: 550px;
+    background-color: #E9EBEE;
+    max-height: 550px;
+    overflow: auto;
+    text-transform: capitalize;
+	padding-left: 20px;
+}
+#users_online44{
+	padding-left:20px;
+	border-radius: 0px;
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    float: left;
+    border: 1px solid #ccc;
+    width: 240px;
+    height: 100px;
+    background-color: #fff;
+    max-height: 130px;
+    overflow: auto;
+    text-transform: capitalize;
+}
+
+#users_online1 ul li{
+	float:left;
+	width:100%;
+	border:1px solid transparent;
+	padding:5px;
+	margin-left:-1px;
+	border-right:0;
+	position:relative;
+	height:65px;
+}
+#users_online3 ul li{
+	float:left;
+	width:100%;
+	border:1px solid transparent;
+	padding:5px;
+	margin-left:15px;
+	border-right:0;
+	position:relative;
+}
+#users_online ul li{
+	text-transform:capitalize;
+	float:left;
+	width:100%;
+	border:1px solid transparent;
+	padding:5px;
+	margin-left:-1px;
+	border-right:0;
+	position:relative;
+}
+
+#users_online ul li:hover{
+	border:1px solid #666;
+	background:linear-gradient(to right, #fff, #fff 60%);
+}
+#users_online ul li a{
+	text-decoration:none;
+	float:left;
+	width:70%;
+	margin-left:10px;
+	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#0275d8;
+    line-height:40px;
+}
+#users_online1 ul li a{
+	text-decoration:none;
+	float:left;
+	width:70%;
+	margin-left:10px;
+	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#0275d8;
+
+	line-height:40px;
+}
+.imgSmall{
+	float:left;
+	width:44px;
+	height:44px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.imgSmall img{width:100%; height:100%;}
+.status{
+	position:absolute;
+	right:8px;
+	top:50%;
+	width:12px;
+	height:12px;
+	margin-top:-6px;
+	border-radius:50%;
+	background:#666;
+}
+.status.off{background:#ccc;}
+.status.on{background:#090;}
+
+.estatus.off{background:#ccc;}
+.estatus.on{background:#090;}
+
+/**Aside dos chats **/
+#chats{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:82%;
+	
+}
+#con_nav{
+height:50px;	
+}
+
+
+
+/**JANELAS**/
+.window{
+	float:left;
+	width:270px;
+	margin-left:5px;
+	height:auto;
+	overflow:hidden;
+	border-radius:4px;
+}
+.ue{
+color:#fff;	
+}
+.window .header_window{
+	float:left;
+	background:#08589a;
+	padding:5px;
+	width:270px;
+	position:relative;
+	cursor:pointer;
+}
+.window .header_window .close{
+	text-decoration:none;
+	float:left;
+	color:white;
+	font:16px Tahoma, arial;
+	padding:0 10px 0 0;
+}
+.window .header_window .name{
+	float:left;
+	font:16px tahoma, arial;
+	color:white;
+}
+
+.window .body{
+	float:left;
+	width:100%;
+}
+
+.window .body .mensagens{
+	float:left;
+	width:100%;
+	background:#ebebeb;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	height:230px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:4px;
+}
+.mensagens ul{
+	float:left;
+	width:100%;
+}
+
+.mensagens ul li{
+	float:right;
+	width:80%;
+	background:#fff;
+	border:1px solid #999;
+	border-radius:4px;
+	position:relative;
+	padding:4px;
+	margin-bottom:9px;
+}
+.mensagens ul li .imgSmall{
+	position:absolute;
+	width:35px;
+	height:35px;
+	left:-45px;
+	margin-top:-8px;
+	margin-bottom:10px;
+}
+.mensagens ul li p{
+	font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#333;
+}
+.mensagens ul li .ue{
+	font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+.mensagens ul li.eu{float:left; background:#08589a;}
+.mensagens::-webkit-scrollbar{width:0px;}
+.mensagens::-webkit-scrollbar-track{background-color:#666; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+.mensagens::-webkit-scrollbar-thumb{background-color:#666;}
+.mensagens::-webkit-scrollbar-thumb:hover{background-color:#069;}
+
+#users_online ul li{float:left;}
+#users_online::-webkit-scrollbar{width:0px;}
+#users_online::-webkit-scrollbar-track{background-color:#666; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+#users_online::-webkit-scrollbar-thumb{background-color:#666;}
+#users_online::-webkit-scrollbar-thumb:hover{background-color:#069;}
+#users_online3 ul li{float:left;}
+#users_online3::-webkit-scrollbar{width:0px;}
+#users_online3::-webkit-scrollbar-track{background-color:#666; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+#users_online3::-webkit-scrollbar-thumb{background-color:#666;}
+#users_online3::-webkit-scrollbar-thumb:hover{background-color:#069;}
+
+.window .body .send_message{
+	float:left;
+	width:100%;
+	position:relative;
+	height: 57px;
+}
+.window .body .send_message input{
+	float:left;
+	width:100%;
+	padding:3px;
+	background:white;
+	border:1px solid #999;
+	outline:none;
+}
+.mensagens ul li .au::after {
+  background: #fff;
+    border: 1px solid #999;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    content: '';
+    height: 12px;
+    position: absolute;
+    left: -6px;
+    top: 2px;
+    transform: rotate(-44deg);
+    width: 13px;
+    z-index: 0;
+}
+.mensagens ul li .ue::after {
+ background: #08589a;
+    border: 1px solid #08589a;
+    border-bottom-color: #08589a;
+    border-right-color: #08589a;
+    content: '';
+    height: 12px;
+    position: absolute;
+    left: 96%;
+    top: 3px;
+    transform: rotate(-44deg);
+    width: 14px;
+    z-index: 0;
+}
+.au{
+	padding-left:5px;
+	}
+	.au{
+	padding-right:5px;
+	}
